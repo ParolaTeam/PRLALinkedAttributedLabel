@@ -1,0 +1,997 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		216A264014A79F73E96BE69B080B2ADF /* PRLALinkedAttributedLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5682903DACFF0C5B0F89982BB64534C /* PRLALinkedAttributedLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21FB95D6121A46FCFF2707FA477CA688 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F0D24BFFB6DB325DF0792C8667093C /* QuartzCore.framework */; };
+		26DE1B81ECD449750D13FDBF3FFE4005 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16B9DADAE4C71C4A0D9335E88586F6B /* UIKit.framework */; };
+		2D66AC7939EC6B9FD20026E4EFD82CBA /* TTTAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAA81F95312CA42B98482150209BD8F /* TTTAttributedLabel-dummy.m */; };
+		512D6EA62494EF8DA99134D9FF241038 /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 14FA40BC89CA2B092ECB5ADEC2035134 /* TTTAttributedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5745397010A4D616B3A873B6FCB40130 /* Pods-PRLALinkedAttributedLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB911F1B539E053C790D260D99DC56C /* Pods-PRLALinkedAttributedLabel_Tests-dummy.m */; };
+		624571D00E1A26DC05634BCCA3D581DA /* PRLALinkedAttributedLabel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B4753167A94ECDBAAC18DD06719CCFDB /* PRLALinkedAttributedLabel.bundle */; };
+		6F655BF7CE1EDB1768DE7B4DFF1087D6 /* Pods-PRLALinkedAttributedLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B81F6D931AEE46A82DC43C94411FAFD /* Pods-PRLALinkedAttributedLabel_Example-dummy.m */; };
+		8E12913A7EA6FFB663DF0249EA14B0AC /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE587F771244E10A916C2894ACA1AC4 /* TTTAttributedLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9DE02E55CD9A1FCC07FDA9F6D0500A8B /* Pods-PRLALinkedAttributedLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6372A0618ADEF04520A659249959F2F /* Pods-PRLALinkedAttributedLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD067C25622DE06FB19481DB6D0A6FAE /* TTTAttributedLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8A489AFEABADFA58A94C4D89EA3976 /* TTTAttributedLabel.framework */; };
+		B19072048F5B59AC13FAC9D861272222 /* PRLALinkedAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5F7C055FC48BFC09D487DA3FF89B7E /* PRLALinkedAttributedLabel-dummy.m */; };
+		B218064D507F238AF5F4A885723146D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E11DD174FFBFEB287DABBF5AD58493 /* CoreGraphics.framework */; };
+		B3FCCC856B8F8A08696078AC59B3CDFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC35D65C87088D30B306DC8DDACA267 /* Foundation.framework */; };
+		C047B4ECBF56C7095A90A6734995D674 /* TTTAttributedLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD05A550A7027F62316B82182628DCD6 /* TTTAttributedLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA1B84A82E1877744D2B8773F7A89DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC35D65C87088D30B306DC8DDACA267 /* Foundation.framework */; };
+		CE1867EEA4879FF42303C348BD370B8A /* Pods-PRLALinkedAttributedLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9052667FCB73E0842C5151F1CC2CE054 /* Pods-PRLALinkedAttributedLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC19949F8B06671E3B09ECB54835857A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC35D65C87088D30B306DC8DDACA267 /* Foundation.framework */; };
+		EE50DAE4B7B2481FB439EA0D52B3B39E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809F1EE5B73C5CFD350A6A74A82AF008 /* CoreText.framework */; };
+		F0D56EB4666EDBCFB572B7B115466514 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC35D65C87088D30B306DC8DDACA267 /* Foundation.framework */; };
+		FD4C9992AA1576917AE53B1E31181347 /* PRLALinkedAttributedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB3BB01ED9F5449F34FEDD17EA2567 /* PRLALinkedAttributedLabel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1358839F77074C340FAA5E34951AD7A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21EDD644402D467859151BB70225F30C;
+			remoteInfo = TTTAttributedLabel;
+		};
+		286BF503CE8E1C85E9F3988870A7B346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 488A27471063DA801C0018EF9E4FB90A;
+			remoteInfo = "PRLALinkedAttributedLabel-PRLALinkedAttributedLabel";
+		};
+		6878D3A44CE136E577ABAF2FBC11BA27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21EDD644402D467859151BB70225F30C;
+			remoteInfo = TTTAttributedLabel;
+		};
+		7F5F78245165B271A4E9BC079C59D6B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21EDD644402D467859151BB70225F30C;
+			remoteInfo = TTTAttributedLabel;
+		};
+		D6E9E6CD8686B8A0E38A9BEB10013A08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4FEF8332EB2FFE873A4F00CB0340F1E;
+			remoteInfo = PRLALinkedAttributedLabel;
+		};
+		E8DD14B161A92DF04255BD28DFB3AB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4FEF8332EB2FFE873A4F00CB0340F1E;
+			remoteInfo = PRLALinkedAttributedLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CB75AF9F04F221447EE34E44144023 /* PRLALinkedAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PRLALinkedAttributedLabel.xcconfig; sourceTree = "<group>"; };
+		0329F4672D412D91896D3EE8E1C3DA28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1221C3733E8A17C1D59937767C2DA917 /* Pods-PRLALinkedAttributedLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRLALinkedAttributedLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		14B7114A9EF3BD03940649AC0FDA9687 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14FA40BC89CA2B092ECB5ADEC2035134 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
+		155D8B738E55A3A766403E826E94AE36 /* Pods-PRLALinkedAttributedLabel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRLALinkedAttributedLabel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		18C8DFD91F14A20C55AF3E585322C559 /* PRLALinkedAttributedLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PRLALinkedAttributedLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E11DD174FFBFEB287DABBF5AD58493 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		2CAA81F95312CA42B98482150209BD8F /* TTTAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTTAttributedLabel-dummy.m"; sourceTree = "<group>"; };
+		2EC35D65C87088D30B306DC8DDACA267 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3322A02F2D78943D8E16799D15CA0592 /* TTTAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
+		37B767A585EF37E0107D779731181405 /* Pods-PRLALinkedAttributedLabel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRLALinkedAttributedLabel_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		432EFCC68DAD2B97EF495589494B0A2E /* Pods-PRLALinkedAttributedLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRLALinkedAttributedLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4DD7BD987CA5F82157D9AE442ED83317 /* Pods-PRLALinkedAttributedLabel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PRLALinkedAttributedLabel_Tests.modulemap"; sourceTree = "<group>"; };
+		56F982C7C53E3B8813EA7E7E06C233CB /* Pods_PRLALinkedAttributedLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRLALinkedAttributedLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B1F6166B90155784F3E6B8CCD0CC3D /* Pods-PRLALinkedAttributedLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PRLALinkedAttributedLabel_Example.modulemap"; sourceTree = "<group>"; };
+		5D8A489AFEABADFA58A94C4D89EA3976 /* TTTAttributedLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTTAttributedLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		699EC51ECEC672251654BABBE1452A93 /* Pods-PRLALinkedAttributedLabel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRLALinkedAttributedLabel_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6B81F6D931AEE46A82DC43C94411FAFD /* Pods-PRLALinkedAttributedLabel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRLALinkedAttributedLabel_Example-dummy.m"; sourceTree = "<group>"; };
+		6BE587F771244E10A916C2894ACA1AC4 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = TTTAttributedLabel/TTTAttributedLabel.m; sourceTree = "<group>"; };
+		6DC24E8BCA0F4457349C914858B41CD7 /* Pods-PRLALinkedAttributedLabel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PRLALinkedAttributedLabel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7545A24BDE5AF2B4DF4A587911A18BCF /* TTTAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTTAttributedLabel.xcconfig; sourceTree = "<group>"; };
+		809F1EE5B73C5CFD350A6A74A82AF008 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		83C2AB47B810BBA894F261CEBEC40F54 /* TTTAttributedLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TTTAttributedLabel.modulemap; sourceTree = "<group>"; };
+		878E43FDC8475F1477A8CF6C3EBEFC88 /* Pods-PRLALinkedAttributedLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRLALinkedAttributedLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8A61656826E679AA16356A1B426C95BF /* PRLALinkedAttributedLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PRLALinkedAttributedLabel.modulemap; sourceTree = "<group>"; };
+		8DEB3BB01ED9F5449F34FEDD17EA2567 /* PRLALinkedAttributedLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PRLALinkedAttributedLabel.swift; sourceTree = "<group>"; };
+		8FFEF1FB77CB488B91F84F5D62EAFF72 /* Pods-PRLALinkedAttributedLabel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRLALinkedAttributedLabel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9052667FCB73E0842C5151F1CC2CE054 /* Pods-PRLALinkedAttributedLabel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRLALinkedAttributedLabel_Tests-umbrella.h"; sourceTree = "<group>"; };
+		92DF6C136A7EC570FB6BF0703DF7CF26 /* PRLALinkedAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PRLALinkedAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
+		A6372A0618ADEF04520A659249959F2F /* Pods-PRLALinkedAttributedLabel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PRLALinkedAttributedLabel_Example-umbrella.h"; sourceTree = "<group>"; };
+		A9C0DD618E086E39B13028F1184679BB /* TTTAttributedLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TTTAttributedLabel-Private.xcconfig"; sourceTree = "<group>"; };
+		AD2BA776583B24787CA65ACBD0560BCE /* Pods-PRLALinkedAttributedLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PRLALinkedAttributedLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B443104C82FB889080C47117290F9ADF /* Pods-PRLALinkedAttributedLabel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRLALinkedAttributedLabel_Tests-resources.sh"; sourceTree = "<group>"; };
+		B4753167A94ECDBAAC18DD06719CCFDB /* PRLALinkedAttributedLabel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRLALinkedAttributedLabel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58E4ED64FF68E2C4D7B61001C671F10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C7F0D24BFFB6DB325DF0792C8667093C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CF5F7C055FC48BFC09D487DA3FF89B7E /* PRLALinkedAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PRLALinkedAttributedLabel-dummy.m"; sourceTree = "<group>"; };
+		D16B9DADAE4C71C4A0D9335E88586F6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D5682903DACFF0C5B0F89982BB64534C /* PRLALinkedAttributedLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PRLALinkedAttributedLabel-umbrella.h"; sourceTree = "<group>"; };
+		D67E0160808F3E77031757AEA7129838 /* Pods-PRLALinkedAttributedLabel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PRLALinkedAttributedLabel_Example-resources.sh"; sourceTree = "<group>"; };
+		DD05A550A7027F62316B82182628DCD6 /* TTTAttributedLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-umbrella.h"; sourceTree = "<group>"; };
+		DD6955353327EBA9DB405F9233E4FD94 /* Pods-PRLALinkedAttributedLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PRLALinkedAttributedLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E020D82B839F246F90459CF7D5B639DB /* Pods_PRLALinkedAttributedLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRLALinkedAttributedLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1519EE5F1FC70C8566386E5F5DA193E /* TTTAttributedLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTTAttributedLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD74A84EB6B6474A4F7BCD36F592E534 /* PRLALinkedAttributedLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PRLALinkedAttributedLabel-Private.xcconfig"; sourceTree = "<group>"; };
+		FDB911F1B539E053C790D260D99DC56C /* Pods-PRLALinkedAttributedLabel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PRLALinkedAttributedLabel_Tests-dummy.m"; sourceTree = "<group>"; };
+		FEAFE503D5BCCF8808167BB039A95284 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A0D115E02BE69346E45F906F4561B02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC19949F8B06671E3B09ECB54835857A /* Foundation.framework in Frameworks */,
+				AD067C25622DE06FB19481DB6D0A6FAE /* TTTAttributedLabel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41618287A7CB14424234A180B981A5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC63D01E3D65BFCAB992C4352637972D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FCCC856B8F8A08696078AC59B3CDFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE1DF42C5E4439527897946AA5F79E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D56EB4666EDBCFB572B7B115466514 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC48FFA133B9D043C1D150290F614B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B218064D507F238AF5F4A885723146D6 /* CoreGraphics.framework in Frameworks */,
+				EE50DAE4B7B2481FB439EA0D52B3B39E /* CoreText.framework in Frameworks */,
+				CA1B84A82E1877744D2B8773F7A89DC3 /* Foundation.framework in Frameworks */,
+				21FB95D6121A46FCFF2707FA477CA688 /* QuartzCore.framework in Frameworks */,
+				26DE1B81ECD449750D13FDBF3FFE4005 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		222D8A7FEFB3088128FCAA9938A56FC2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8DEB3BB01ED9F5449F34FEDD17EA2567 /* PRLALinkedAttributedLabel.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2AAD662D02EE6B7B217D653D78279BBC /* Pods-PRLALinkedAttributedLabel_Example */ = {
+			isa = PBXGroup;
+			children = (
+				14B7114A9EF3BD03940649AC0FDA9687 /* Info.plist */,
+				58B1F6166B90155784F3E6B8CCD0CC3D /* Pods-PRLALinkedAttributedLabel_Example.modulemap */,
+				DD6955353327EBA9DB405F9233E4FD94 /* Pods-PRLALinkedAttributedLabel_Example-acknowledgements.markdown */,
+				6DC24E8BCA0F4457349C914858B41CD7 /* Pods-PRLALinkedAttributedLabel_Example-acknowledgements.plist */,
+				6B81F6D931AEE46A82DC43C94411FAFD /* Pods-PRLALinkedAttributedLabel_Example-dummy.m */,
+				699EC51ECEC672251654BABBE1452A93 /* Pods-PRLALinkedAttributedLabel_Example-frameworks.sh */,
+				D67E0160808F3E77031757AEA7129838 /* Pods-PRLALinkedAttributedLabel_Example-resources.sh */,
+				A6372A0618ADEF04520A659249959F2F /* Pods-PRLALinkedAttributedLabel_Example-umbrella.h */,
+				AD2BA776583B24787CA65ACBD0560BCE /* Pods-PRLALinkedAttributedLabel_Example.debug.xcconfig */,
+				878E43FDC8475F1477A8CF6C3EBEFC88 /* Pods-PRLALinkedAttributedLabel_Example.release.xcconfig */,
+			);
+			name = "Pods-PRLALinkedAttributedLabel_Example";
+			path = "Target Support Files/Pods-PRLALinkedAttributedLabel_Example";
+			sourceTree = "<group>";
+		};
+		4234DAFDB62A803AA813849315EDABBF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B58E4ED64FF68E2C4D7B61001C671F10 /* Info.plist */,
+				83C2AB47B810BBA894F261CEBEC40F54 /* TTTAttributedLabel.modulemap */,
+				7545A24BDE5AF2B4DF4A587911A18BCF /* TTTAttributedLabel.xcconfig */,
+				A9C0DD618E086E39B13028F1184679BB /* TTTAttributedLabel-Private.xcconfig */,
+				2CAA81F95312CA42B98482150209BD8F /* TTTAttributedLabel-dummy.m */,
+				3322A02F2D78943D8E16799D15CA0592 /* TTTAttributedLabel-prefix.pch */,
+				DD05A550A7027F62316B82182628DCD6 /* TTTAttributedLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TTTAttributedLabel";
+			sourceTree = "<group>";
+		};
+		47500342BFEDF758A1ED2551E41B6257 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE1B0458A7820EDADBC47B0D32D8CD3E /* PRLALinkedAttributedLabel */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4F0970DB74C0C6F8AFF581712E4D249F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AAD662D02EE6B7B217D653D78279BBC /* Pods-PRLALinkedAttributedLabel_Example */,
+				58064F43CE69E5FFA400D34472085182 /* Pods-PRLALinkedAttributedLabel_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		58064F43CE69E5FFA400D34472085182 /* Pods-PRLALinkedAttributedLabel_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFE503D5BCCF8808167BB039A95284 /* Info.plist */,
+				4DD7BD987CA5F82157D9AE442ED83317 /* Pods-PRLALinkedAttributedLabel_Tests.modulemap */,
+				8FFEF1FB77CB488B91F84F5D62EAFF72 /* Pods-PRLALinkedAttributedLabel_Tests-acknowledgements.markdown */,
+				155D8B738E55A3A766403E826E94AE36 /* Pods-PRLALinkedAttributedLabel_Tests-acknowledgements.plist */,
+				FDB911F1B539E053C790D260D99DC56C /* Pods-PRLALinkedAttributedLabel_Tests-dummy.m */,
+				37B767A585EF37E0107D779731181405 /* Pods-PRLALinkedAttributedLabel_Tests-frameworks.sh */,
+				B443104C82FB889080C47117290F9ADF /* Pods-PRLALinkedAttributedLabel_Tests-resources.sh */,
+				9052667FCB73E0842C5151F1CC2CE054 /* Pods-PRLALinkedAttributedLabel_Tests-umbrella.h */,
+				1221C3733E8A17C1D59937767C2DA917 /* Pods-PRLALinkedAttributedLabel_Tests.debug.xcconfig */,
+				432EFCC68DAD2B97EF495589494B0A2E /* Pods-PRLALinkedAttributedLabel_Tests.release.xcconfig */,
+			);
+			name = "Pods-PRLALinkedAttributedLabel_Tests";
+			path = "Target Support Files/Pods-PRLALinkedAttributedLabel_Tests";
+			sourceTree = "<group>";
+		};
+		657FEE44C30444717CEEA7413BDAAA30 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				14FA40BC89CA2B092ECB5ADEC2035134 /* TTTAttributedLabel.h */,
+				6BE587F771244E10A916C2894ACA1AC4 /* TTTAttributedLabel.m */,
+				4234DAFDB62A803AA813849315EDABBF /* Support Files */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		6A2A2D09395FE1E507483738618ABEE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D8A489AFEABADFA58A94C4D89EA3976 /* TTTAttributedLabel.framework */,
+				CF3E5A45FA44A9028CCF59A242ADBE29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				47500342BFEDF758A1ED2551E41B6257 /* Development Pods */,
+				6A2A2D09395FE1E507483738618ABEE9 /* Frameworks */,
+				FC06AE555EA9FFC5AA21CB25EFBEEB6C /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				4F0970DB74C0C6F8AFF581712E4D249F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9E5B9669AED454130731126362B1CE0E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0329F4672D412D91896D3EE8E1C3DA28 /* Info.plist */,
+				8A61656826E679AA16356A1B426C95BF /* PRLALinkedAttributedLabel.modulemap */,
+				00CB75AF9F04F221447EE34E44144023 /* PRLALinkedAttributedLabel.xcconfig */,
+				FD74A84EB6B6474A4F7BCD36F592E534 /* PRLALinkedAttributedLabel-Private.xcconfig */,
+				CF5F7C055FC48BFC09D487DA3FF89B7E /* PRLALinkedAttributedLabel-dummy.m */,
+				92DF6C136A7EC570FB6BF0703DF7CF26 /* PRLALinkedAttributedLabel-prefix.pch */,
+				D5682903DACFF0C5B0F89982BB64534C /* PRLALinkedAttributedLabel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PRLALinkedAttributedLabel";
+			sourceTree = "<group>";
+		};
+		AE1B0458A7820EDADBC47B0D32D8CD3E /* PRLALinkedAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F713D36612E9E866D562095A4534AF11 /* Pod */,
+				9E5B9669AED454130731126362B1CE0E /* Support Files */,
+			);
+			name = PRLALinkedAttributedLabel;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4753167A94ECDBAAC18DD06719CCFDB /* PRLALinkedAttributedLabel.bundle */,
+				18C8DFD91F14A20C55AF3E585322C559 /* PRLALinkedAttributedLabel.framework */,
+				E020D82B839F246F90459CF7D5B639DB /* Pods_PRLALinkedAttributedLabel_Example.framework */,
+				56F982C7C53E3B8813EA7E7E06C233CB /* Pods_PRLALinkedAttributedLabel_Tests.framework */,
+				E1519EE5F1FC70C8566386E5F5DA193E /* TTTAttributedLabel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF3E5A45FA44A9028CCF59A242ADBE29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				26E11DD174FFBFEB287DABBF5AD58493 /* CoreGraphics.framework */,
+				809F1EE5B73C5CFD350A6A74A82AF008 /* CoreText.framework */,
+				2EC35D65C87088D30B306DC8DDACA267 /* Foundation.framework */,
+				C7F0D24BFFB6DB325DF0792C8667093C /* QuartzCore.framework */,
+				D16B9DADAE4C71C4A0D9335E88586F6B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F713D36612E9E866D562095A4534AF11 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				222D8A7FEFB3088128FCAA9938A56FC2 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		FC06AE555EA9FFC5AA21CB25EFBEEB6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				657FEE44C30444717CEEA7413BDAAA30 /* TTTAttributedLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		487E075B28422D341ACB86BA47C416DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C047B4ECBF56C7095A90A6734995D674 /* TTTAttributedLabel-umbrella.h in Headers */,
+				512D6EA62494EF8DA99134D9FF241038 /* TTTAttributedLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1CF26B14A714ED6BFC285B818A5520 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE02E55CD9A1FCC07FDA9F6D0500A8B /* Pods-PRLALinkedAttributedLabel_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE18EA7ABA9296306AF726A330C6A07B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1867EEA4879FF42303C348BD370B8A /* Pods-PRLALinkedAttributedLabel_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1773C7044F0A6046B90883604B9BFC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216A264014A79F73E96BE69B080B2ADF /* PRLALinkedAttributedLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		21EDD644402D467859151BB70225F30C /* TTTAttributedLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E72EE1EA5C4EE3661E97908386C7CE /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */;
+			buildPhases = (
+				FBF2433D6626E382799E1955DE7C6AB4 /* Sources */,
+				FC48FFA133B9D043C1D150290F614B3B /* Frameworks */,
+				487E075B28422D341ACB86BA47C416DE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTTAttributedLabel;
+			productName = TTTAttributedLabel;
+			productReference = E1519EE5F1FC70C8566386E5F5DA193E /* TTTAttributedLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		488A27471063DA801C0018EF9E4FB90A /* PRLALinkedAttributedLabel-PRLALinkedAttributedLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F190E61DFD498F693BF785F25378056 /* Build configuration list for PBXNativeTarget "PRLALinkedAttributedLabel-PRLALinkedAttributedLabel" */;
+			buildPhases = (
+				8F6C4EA15CBF5FC3B196D5B165CAF116 /* Sources */,
+				41618287A7CB14424234A180B981A5F5 /* Frameworks */,
+				E2946E5B770F8D656D906F678230C67A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PRLALinkedAttributedLabel-PRLALinkedAttributedLabel";
+			productName = "PRLALinkedAttributedLabel-PRLALinkedAttributedLabel";
+			productReference = B4753167A94ECDBAAC18DD06719CCFDB /* PRLALinkedAttributedLabel.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		57E10D844BEC06A07D26B3C8FB6B798B /* Pods-PRLALinkedAttributedLabel_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5E3B89F535FCED325F0D8C34685241 /* Build configuration list for PBXNativeTarget "Pods-PRLALinkedAttributedLabel_Example" */;
+			buildPhases = (
+				B25E280C8013142352683F43EDD4DD26 /* Sources */,
+				AC63D01E3D65BFCAB992C4352637972D /* Frameworks */,
+				AC1CF26B14A714ED6BFC285B818A5520 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B9DE17904CAE5D1654EF7936A1A7860 /* PBXTargetDependency */,
+				C7F1B2B462E8EFC9B42DA538A505D0EC /* PBXTargetDependency */,
+			);
+			name = "Pods-PRLALinkedAttributedLabel_Example";
+			productName = "Pods-PRLALinkedAttributedLabel_Example";
+			productReference = E020D82B839F246F90459CF7D5B639DB /* Pods_PRLALinkedAttributedLabel_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97BB70DFA22D0B632B300A86024DCD0C /* Pods-PRLALinkedAttributedLabel_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0AA64A129C3D9D389C3CA9EE91FF9E /* Build configuration list for PBXNativeTarget "Pods-PRLALinkedAttributedLabel_Tests" */;
+			buildPhases = (
+				04F5E095B9F618A0488BC285F6BFD196 /* Sources */,
+				BAE1DF42C5E4439527897946AA5F79E0 /* Frameworks */,
+				AE18EA7ABA9296306AF726A330C6A07B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EEDECEB8AF0E1E80C68BF1CDF9BCFBF /* PBXTargetDependency */,
+				0BB9968185D9E49C2EE47AB78B1CFB20 /* PBXTargetDependency */,
+			);
+			name = "Pods-PRLALinkedAttributedLabel_Tests";
+			productName = "Pods-PRLALinkedAttributedLabel_Tests";
+			productReference = 56F982C7C53E3B8813EA7E7E06C233CB /* Pods_PRLALinkedAttributedLabel_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4FEF8332EB2FFE873A4F00CB0340F1E /* PRLALinkedAttributedLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AEAFB0EAA0DB0674790708D5C7C6CCF /* Build configuration list for PBXNativeTarget "PRLALinkedAttributedLabel" */;
+			buildPhases = (
+				CC134B93A615A6E4AC39F0D2A10D1E21 /* Sources */,
+				2A0D115E02BE69346E45F906F4561B02 /* Frameworks */,
+				E6EF1848EEBF2A12D9F3EB2FB5EF3EE5 /* Resources */,
+				C1773C7044F0A6046B90883604B9BFC8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADAF721173EA9CC3CCDF33C6DF39E330 /* PBXTargetDependency */,
+				2FB61B8E5750CBD6A0FDBCB1AE5B9E66 /* PBXTargetDependency */,
+			);
+			name = PRLALinkedAttributedLabel;
+			productName = PRLALinkedAttributedLabel;
+			productReference = 18C8DFD91F14A20C55AF3E585322C559 /* PRLALinkedAttributedLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4FEF8332EB2FFE873A4F00CB0340F1E /* PRLALinkedAttributedLabel */,
+				488A27471063DA801C0018EF9E4FB90A /* PRLALinkedAttributedLabel-PRLALinkedAttributedLabel */,
+				57E10D844BEC06A07D26B3C8FB6B798B /* Pods-PRLALinkedAttributedLabel_Example */,
+				97BB70DFA22D0B632B300A86024DCD0C /* Pods-PRLALinkedAttributedLabel_Tests */,
+				21EDD644402D467859151BB70225F30C /* TTTAttributedLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2946E5B770F8D656D906F678230C67A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6EF1848EEBF2A12D9F3EB2FB5EF3EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624571D00E1A26DC05634BCCA3D581DA /* PRLALinkedAttributedLabel.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F5E095B9F618A0488BC285F6BFD196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5745397010A4D616B3A873B6FCB40130 /* Pods-PRLALinkedAttributedLabel_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F6C4EA15CBF5FC3B196D5B165CAF116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25E280C8013142352683F43EDD4DD26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F655BF7CE1EDB1768DE7B4DFF1087D6 /* Pods-PRLALinkedAttributedLabel_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC134B93A615A6E4AC39F0D2A10D1E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19072048F5B59AC13FAC9D861272222 /* PRLALinkedAttributedLabel-dummy.m in Sources */,
+				FD4C9992AA1576917AE53B1E31181347 /* PRLALinkedAttributedLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF2433D6626E382799E1955DE7C6AB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D66AC7939EC6B9FD20026E4EFD82CBA /* TTTAttributedLabel-dummy.m in Sources */,
+				8E12913A7EA6FFB663DF0249EA14B0AC /* TTTAttributedLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB9968185D9E49C2EE47AB78B1CFB20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTTAttributedLabel;
+			target = 21EDD644402D467859151BB70225F30C /* TTTAttributedLabel */;
+			targetProxy = 6878D3A44CE136E577ABAF2FBC11BA27 /* PBXContainerItemProxy */;
+		};
+		2FB61B8E5750CBD6A0FDBCB1AE5B9E66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTTAttributedLabel;
+			target = 21EDD644402D467859151BB70225F30C /* TTTAttributedLabel */;
+			targetProxy = 1358839F77074C340FAA5E34951AD7A8 /* PBXContainerItemProxy */;
+		};
+		8B9DE17904CAE5D1654EF7936A1A7860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PRLALinkedAttributedLabel;
+			target = E4FEF8332EB2FFE873A4F00CB0340F1E /* PRLALinkedAttributedLabel */;
+			targetProxy = E8DD14B161A92DF04255BD28DFB3AB67 /* PBXContainerItemProxy */;
+		};
+		8EEDECEB8AF0E1E80C68BF1CDF9BCFBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PRLALinkedAttributedLabel;
+			target = E4FEF8332EB2FFE873A4F00CB0340F1E /* PRLALinkedAttributedLabel */;
+			targetProxy = D6E9E6CD8686B8A0E38A9BEB10013A08 /* PBXContainerItemProxy */;
+		};
+		ADAF721173EA9CC3CCDF33C6DF39E330 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PRLALinkedAttributedLabel-PRLALinkedAttributedLabel";
+			target = 488A27471063DA801C0018EF9E4FB90A /* PRLALinkedAttributedLabel-PRLALinkedAttributedLabel */;
+			targetProxy = 286BF503CE8E1C85E9F3988870A7B346 /* PBXContainerItemProxy */;
+		};
+		C7F1B2B462E8EFC9B42DA538A505D0EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTTAttributedLabel;
+			target = 21EDD644402D467859151BB70225F30C /* TTTAttributedLabel */;
+			targetProxy = 7F5F78245165B271A4E9BC079C59D6B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16A8A4619F28FDBDB473A23570F286BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878E43FDC8475F1477A8CF6C3EBEFC88 /* Pods-PRLALinkedAttributedLabel_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PRLALinkedAttributedLabel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PRLALinkedAttributedLabel_Example/Pods-PRLALinkedAttributedLabel_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PRLALinkedAttributedLabel_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A81BFEDF1D83AA2958796EA3F2F2A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD74A84EB6B6474A4F7BCD36F592E534 /* PRLALinkedAttributedLabel-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PRLALinkedAttributedLabel/PRLALinkedAttributedLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PRLALinkedAttributedLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PRLALinkedAttributedLabel/PRLALinkedAttributedLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PRLALinkedAttributedLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5597449B04219153584E8D29DB9253F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 432EFCC68DAD2B97EF495589494B0A2E /* Pods-PRLALinkedAttributedLabel_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PRLALinkedAttributedLabel_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PRLALinkedAttributedLabel_Tests/Pods-PRLALinkedAttributedLabel_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PRLALinkedAttributedLabel_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78AAE1A5090CD31BF0755101BD467C7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD2BA776583B24787CA65ACBD0560BCE /* Pods-PRLALinkedAttributedLabel_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PRLALinkedAttributedLabel_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PRLALinkedAttributedLabel_Example/Pods-PRLALinkedAttributedLabel_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PRLALinkedAttributedLabel_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		916917DC1CC8CEF88DAF5227A408CCF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD74A84EB6B6474A4F7BCD36F592E534 /* PRLALinkedAttributedLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PRLALinkedAttributedLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9A05606A68038B7AF76E6E11DB310937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD74A84EB6B6474A4F7BCD36F592E534 /* PRLALinkedAttributedLabel-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PRLALinkedAttributedLabel/PRLALinkedAttributedLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PRLALinkedAttributedLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PRLALinkedAttributedLabel/PRLALinkedAttributedLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PRLALinkedAttributedLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A912071C6EF4CB54390CD8AAE78355F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C0DD618E086E39B13028F1184679BB /* TTTAttributedLabel-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.13.4;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTTAttributedLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TTTAttributedLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0E61811E7016DD7A24637EB63445CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD74A84EB6B6474A4F7BCD36F592E534 /* PRLALinkedAttributedLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PRLALinkedAttributedLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		FAC7840652C184B5815B381A5ED7F620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1221C3733E8A17C1D59937767C2DA917 /* Pods-PRLALinkedAttributedLabel_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PRLALinkedAttributedLabel_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-PRLALinkedAttributedLabel_Tests/Pods-PRLALinkedAttributedLabel_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PRLALinkedAttributedLabel_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC2DF2BF4C51798F86EFCD6D4525923F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C0DD618E086E39B13028F1184679BB /* TTTAttributedLabel-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1.13.4;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTTAttributedLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TTTAttributedLabel/TTTAttributedLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TTTAttributedLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07E72EE1EA5C4EE3661E97908386C7CE /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2DF2BF4C51798F86EFCD6D4525923F /* Debug */,
+				A912071C6EF4CB54390CD8AAE78355F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F5E3B89F535FCED325F0D8C34685241 /* Build configuration list for PBXNativeTarget "Pods-PRLALinkedAttributedLabel_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78AAE1A5090CD31BF0755101BD467C7D /* Debug */,
+				16A8A4619F28FDBDB473A23570F286BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AEAFB0EAA0DB0674790708D5C7C6CCF /* Build configuration list for PBXNativeTarget "PRLALinkedAttributedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A81BFEDF1D83AA2958796EA3F2F2A4C /* Debug */,
+				9A05606A68038B7AF76E6E11DB310937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F190E61DFD498F693BF785F25378056 /* Build configuration list for PBXNativeTarget "PRLALinkedAttributedLabel-PRLALinkedAttributedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916917DC1CC8CEF88DAF5227A408CCF3 /* Debug */,
+				D0E61811E7016DD7A24637EB63445CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0AA64A129C3D9D389C3CA9EE91FF9E /* Build configuration list for PBXNativeTarget "Pods-PRLALinkedAttributedLabel_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC7840652C184B5815B381A5ED7F620 /* Debug */,
+				5597449B04219153584E8D29DB9253F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

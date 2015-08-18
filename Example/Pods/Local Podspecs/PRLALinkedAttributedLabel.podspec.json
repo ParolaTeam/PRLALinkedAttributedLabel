@@ -1,0 +1,30 @@
+{
+  "name": "PRLALinkedAttributedLabel",
+  "version": "0.1.0",
+  "summary": "A short description of PRLALinkedAttributedLabel.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/PRLALinkedAttributedLabel",
+  "license": "MIT",
+  "authors": {
+    "Saggi": "saggi@paro.la"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/PRLALinkedAttributedLabel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "PRLALinkedAttributedLabel": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "TTTAttributedLabel": [
+      "~> 1.13.4"
+    ]
+  }
+}

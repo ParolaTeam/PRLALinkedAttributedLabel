@@ -1,0 +1,17 @@
+PODS:
+  - PRLALinkedAttributedLabel (0.1.0):
+    - TTTAttributedLabel (~> 1.13.4)
+  - TTTAttributedLabel (1.13.4)
+
+DEPENDENCIES:
+  - PRLALinkedAttributedLabel (from `../`)
+
+EXTERNAL SOURCES:
+  PRLALinkedAttributedLabel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PRLALinkedAttributedLabel: aaf3473d70e84ca700bf01853bdc15e90e9f63cd
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+
+COCOAPODS: 0.38.2

@@ -15,6 +15,9 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		77EC6D0CB7F37C16F9F92DBC /* Pods_PRLALinkedAttributedLabel_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397368CD855B8846E328D405 /* Pods_PRLALinkedAttributedLabel_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CC5EC9513DC09179D67EF926 /* Pods_PRLALinkedAttributedLabel_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48EE1057734AEE7E4417EDD /* Pods_PRLALinkedAttributedLabel_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D66516381B833A17005B0F9D /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66516371B833A17005B0F9D /* Fruit.swift */; };
+		D665163A1B833A22005B0F9D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66516391B833A22005B0F9D /* Person.swift */; };
+		D665163C1B834813005B0F9D /* EatingTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D665163B1B834813005B0F9D /* EatingTableviewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +42,14 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = PRLALinkedAttributedLabel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* PRLALinkedAttributedLabel_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRLALinkedAttributedLabel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		B657C72BB0D3E8E9E1F4B9EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D2DDA00910D94122E36C631D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D66516371B833A17005B0F9D /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		D66516391B833A22005B0F9D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D665163B1B834813005B0F9D /* EatingTableviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatingTableviewCell.swift; sourceTree = "<group>"; };
 		E48EE1057734AEE7E4417EDD /* Pods_PRLALinkedAttributedLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRLALinkedAttributedLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C5E2478A9C9DB3895997C0 /* Pods-PRLALinkedAttributedLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRLALinkedAttributedLabel_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRLALinkedAttributedLabel_Example/Pods-PRLALinkedAttributedLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EB6E2A4D6D61DACBA935EBE1 /* Pods-PRLALinkedAttributedLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRLALinkedAttributedLabel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PRLALinkedAttributedLabel_Tests/Pods-PRLALinkedAttributedLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* PRLALinkedAttributedLabel_Example.app */,
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* PRLALinkedAttributedLabel_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +105,9 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				D66516371B833A17005B0F9D /* Fruit.swift */,
+				D66516391B833A22005B0F9D /* Person.swift */,
+				D665163B1B834813005B0F9D /* EatingTableviewCell.swift */,
 			);
 			name = "Example for PRLALinkedAttributedLabel";
 			path = PRLALinkedAttributedLabel;
@@ -200,7 +209,7 @@
 			);
 			name = PRLALinkedAttributedLabel_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* PRLALinkedAttributedLabel_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -358,7 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D665163C1B834813005B0F9D /* EatingTableviewCell.swift in Sources */,
+				D66516381B833A17005B0F9D /* Fruit.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				D665163A1B833A22005B0F9D /* Person.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

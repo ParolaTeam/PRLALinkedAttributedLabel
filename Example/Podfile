@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'PRLALinkedAttributedLabel_Example', :exclusive => true do
+  pod "PRLALinkedAttributedLabel", :path => "../"
+end
+
+target 'PRLALinkedAttributedLabel_Tests', :exclusive => true do
+  pod "PRLALinkedAttributedLabel", :path => "../"
+
+  
+end
